@@ -31,9 +31,5 @@ public class PlayerMvmt : MonoBehaviour
         {
             transform.position -= new Vector3(0, 0, 0.1f);
         }
-        if (Input.GetKey(KeyCode.Space))
-        {
-            transform.position += new Vector3(0, 0.1f, 0);
-        }
     }
 }
