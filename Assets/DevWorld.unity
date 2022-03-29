@@ -131,7 +131,17 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
+<<<<<<< HEAD:Assets/DevWorld.unity
   - component: {fileID: 243744985}
+=======
+  - component: {fileID: 1124428758}
+  - component: {fileID: 1124428757}
+  - component: {fileID: 1124428756}
+  - component: {fileID: 1124428755}
+  - component: {fileID: 1124428754}
+  - component: {fileID: 1124428759}
+  - component: {fileID: 1124428760}
+>>>>>>> c3bce5587e00f966bed98c5d511d0ab736809951:Arcade Mechanics/Assets/DevWorld.unity
   m_Layer: 0
   m_Name: Feet
   m_TagString: Untagged
@@ -236,6 +246,36 @@ Transform:
   m_Father: {fileID: 1754940195}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< HEAD:Assets/DevWorld.unity
+=======
+--- !u!114 &1124428759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1124428753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9783a5f2c9d277d478674ac662568312, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rb: {fileID: 0}
+--- !u!114 &1124428760
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1124428753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3cd0fcf5869423c4e8f8a897f3b9bdb2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  jumpPower: 12
+  canJump: 1
+>>>>>>> c3bce5587e00f966bed98c5d511d0ab736809951:Arcade Mechanics/Assets/DevWorld.unity
 --- !u!1 &1338423847
 GameObject:
   m_ObjectHideFlags: 0
