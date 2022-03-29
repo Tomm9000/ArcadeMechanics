@@ -5,31 +5,43 @@ using UnityEngine;
 public class PlayerMvmt : MonoBehaviour
 {
 
-    public Rigidbody rb;
-    // Start is called before the first frame update
-    void Start()
-    {
-        rb = GetComponent<Rigidbody>();
-    }
+    public CharacterController controller;
+
+    public float Sped = 12f;
+    public float Gravity = -9.81f;
+    public float Height = 3f;
+
+    public Transform Check;
+    public float Distance = 0.4f;
+    public LayerMask groundMask;
+
+    Vector3 Velocity;
+    bool isGrounded;
 
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.A))
+        isGrounded = Physics.CheckSphere(Check.position, Distance, groundMask);
+
+        if(isGrounded && Velocity.y < 0)
         {
-            transform.position -= new Vector3(0.1f, 0, 0);
+            Velocity.y = -2f;
         }
-        if (Input.GetKey(KeyCode.D))
+
+        float X = Input.GetAxis("Horizontal");
+        float Z = Input.GetAxis("Vertical");
+
+        Vector3 Move = transform.right * X + transform.forward * Z;
+
+        controller.Move(Move * Sped * Time.deltaTime);
+
+        if(Input.GetButtonDown("Jump") && isGrounded)
         {
-            transform.position += new Vector3(0.1f, 0, 0);
+            Velocity.y = Mathf.Sqrt(Height * -2f * Gravity);
         }
-        if (Input.GetKey(KeyCode.W))
-        {
-            transform.position += new Vector3(0, 0, 0.1f);
-        }
-        if (Input.GetKey(KeyCode.S))
-        {
-            transform.position -= new Vector3(0, 0, 0.1f);
-        }
+
+        Velocity.y += Gravity * Time.deltaTime;
+
+        controller.Move(Velocity * Time.deltaTime);
     }
 }
