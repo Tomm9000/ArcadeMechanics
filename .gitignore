@@ -2,13 +2,13 @@
 #
 # Get latest from https://github.com/github/gitignore/blob/main/Unity.gitignore
 #
-/[Ll]ibrary/
-/[Tt]emp/
-/[Oo]bj/
-/[Bb]uild/
-/[Bb]uilds/
-/[Ll]ogs/
-/[Uu]ser[Ss]ettings/
+/Arcade Mechanics/[Ll]ibrary/
+/Arcade Mechanics/[Tt]emp/
+/Arcade Mechanics/[Oo]bj/
+/Arcade Mechanics/[Bb]uild/
+/Arcade Mechanics/[Bb]uilds/
+/Arcade Mechanics/[Ll]ogs/
+/Arcade Mechanics/[Uu]ser[Ss]ettings/
 
 # MemoryCaptures can get excessive in size.
 # They also could contain extremely sensitive data
