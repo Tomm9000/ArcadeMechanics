@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 319f1d32cbddc7d48a711c009e583764
+guid: 21ca816de6f3abd4cbee2c0462c8a186
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
@@ -8,7 +8,7 @@ ModelImporter:
     2100000: MeleeTexture__VillagerTexture_png
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Shield
+    4300000: Sword
   externalObjects: {}
   materials:
     importMaterials: 0
