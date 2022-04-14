@@ -49,8 +49,10 @@
   <ItemGroup>
      <Compile Include="Assets\PlayerMovement\PlayerScript\Mvmt.cs" />
      <Compile Include="Assets\PlayerMovement\PlayerScript\Camera.cs" />
+     <Compile Include="Assets\Melee Mechanic\MeleeAttack.cs" />
      <Compile Include="Assets\PlayerMovement\PlayerScript\Pickup.cs" />
      <Compile Include="Assets\Shoot Mechanic\LaunchProjectile.cs" />
+     <Compile Include="Assets\Melee Mechanic\Enemy.cs" />
  <Reference Include="UnityEngine">
  <HintPath>C:/Program Files/Unity 2020.3.30f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
  </Reference>
